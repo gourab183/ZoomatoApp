@@ -27,9 +27,9 @@ $.ajax({
   success: function(res){
     console.log(res.responseText);
     browserHistory.push('/home');
-  }.bind(this),
+  },
   error: function(err){
-    alert("Invalid username or password");
+    // alert("Invalid username or password");
     console.log(err.responseText);
   }
 });
